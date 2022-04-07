@@ -1,0 +1,106 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rebeccapurple;
+}
+
+#quote-box {
+  width: 700px;
+  height: 400px;
+  background-color: #ff2121;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 20px;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 64% 10% 20%;
+      grid-template-rows: 64% 10% 20%;
+  row-gap: 3%;
+  border-radius: 25px;
+  -webkit-box-shadow: aquamarine -8px 5px 5px 0px;
+          box-shadow: aquamarine -8px 5px 5px 0px;
+}
+
+#quote-box h1 {
+  font-size: 45px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#quote-box p {
+  text-align: right;
+}
+
+#quote-box div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quote-box div button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 43px;
+  color: #ffabab;
+  background-color: #a30000;
+  font-size: 23px;
+}
+
+#quote-box div button:hover {
+  color: #49ff9c;
+  background-color: #000000;
+  -webkit-animation-name: radius;
+          animation-name: radius;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#quote-box div a {
+  font-size: 126px;
+  cursor: pointer;
+  text-decoration: none;
+  color: brown;
+}
+
+#quote-box div a:hover {
+  color: #2aa9e0;
+}
+
+#quote-box:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@-webkit-keyframes radius {
+  100% {
+    border-radius: 25px;
+  }
+}
+
+@keyframes radius {
+  100% {
+    border-radius: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

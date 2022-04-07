@@ -1,0 +1,93 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    background-color: rebeccapurple;
+}
+#quote-box
+{
+    width: 700px;
+    height: 400px;
+    background-color: #ff2121;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-rows: 64% 10% 20%;
+    row-gap: 3%;
+    border-radius: 25px;
+    box-shadow: aquamarine -8px 5px 5px 0px;
+
+    h1
+    {
+        font-size: 45px;
+        font-family: sans-serif;
+        text-align: justify;
+
+    }
+    
+    p
+    {
+        text-align: right;
+    }
+    div
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button
+        {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            height: 43px;
+            color: #ffabab;
+            background-color: #a30000;
+            font-size: 23px;
+        }
+        button:hover
+        {
+            color:#49ff9c;
+            background-color: #000000;
+            animation-name: radius;
+            animation-duration: .6s;
+            animation-fill-mode: forwards;
+        }
+
+        a
+        {
+            font-size: 126px;
+            cursor: pointer;
+            text-decoration: none;
+            color:brown;
+        }
+        a:hover
+        {
+            color:#2aa9e0;
+        }
+    }
+}
+#quote-box:hover
+{
+    box-shadow: none;
+}
+@keyframes radius {
+    100%
+    {
+        border-radius: 25px;
+
+    }
+    
+}
